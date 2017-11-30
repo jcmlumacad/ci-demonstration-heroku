@@ -6,13 +6,13 @@ machine:
 dependencies:
   override:
     - cp .env.example .env
-#     - cp .env.example .env
-#     - composer install --dev --prefer-source --no-interaction
-#     - chmod -R 777 storage
-#     - php artisan key:generate
-# test:
-#   override:
-#     - php --version
+    - cp .env.example .env
+    - composer install --dev --prefer-source --no-interaction
+    - chmod -R 777 storage
+    - php artisan key:generate
+test:
+  override:
+    - php --version
 deployment:
   production:
     branch: master
