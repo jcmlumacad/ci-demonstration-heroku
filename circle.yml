@@ -1,10 +1,13 @@
+# The machine section enables you to configure the virtual machine that runs your tests.
 machine:
   override:
     - echo "done"
-  # pre:
-  #   - sudo apt-get update; USE_PRECOMPILE=true sudo -E circleci-install php 7.1.0
-  # php:
-  #   version: 7.1.0
+    # pre:
+    #   - sudo apt-get update; USE_PRECOMPILE=true sudo -E circleci-install php 7.1.0
+    # php:
+    #   version: 7.1.0
+
+# Install your project’s language-specific dependencies
 dependencies:
   override:
     - echo "done"
@@ -13,11 +16,20 @@ dependencies:
     # - composer install --dev --prefer-source --no-interaction
     # - chmod -R 777 storage
     # - php artisan key:generate
+
+# The most important part of testing is actually running the tests!
 test:
   override:
     - echo "done"
-    # - php --version
-    # - phpunit
+
+# Your web framework typically includes commands to create your database,
+# install your schema, and run your migrations.
+database:
+  override:
+    - echo "done"
+
+# The deployment section is optional. You can run commands to deploy to staging
+# or production. These commands are triggered only after a successful (green) build.
 deployment:
   production:
     branch: master
