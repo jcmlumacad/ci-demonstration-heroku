@@ -11,8 +11,7 @@ machine:
 dependencies:
   override:
     - echo "done"
-    # - cp .env.example .env
-    # - cp .env.example .env
+    # - cp .env.circleci .env
     # - composer install --dev --prefer-source --no-interaction
     # - chmod -R 777 storage
     # - php artisan key:generate
