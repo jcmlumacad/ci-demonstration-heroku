@@ -12,21 +12,24 @@ dependencies:
   override:
     - echo "done"
     # - cp .env.example .env
-    # - cp .env.example .env
     # - composer install --dev --prefer-source --no-interaction
     # - chmod -R 777 storage
     # - php artisan key:generate
-
-# The most important part of testing is actually running the tests!
-test:
-  override:
-    - echo "done"
 
 # Your web framework typically includes commands to create your database,
 # install your schema, and run your migrations.
 database:
   override:
     - echo "done"
+    # - touch database/database.sqlite
+    # - php artisan migrate --no-interaction -vvv
+
+# The most important part of testing is actually running the tests!
+test:
+  override:
+    - echo "done"
+    # - phpunit
+    # - rm database/database.sqlite
 
 # The deployment section is optional. You can run commands to deploy to staging
 # or production. These commands are triggered only after a successful (green) build.
