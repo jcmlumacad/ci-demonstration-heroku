@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    CI Demonstration Heroku
                 </div>
 
                 <div class="links">
