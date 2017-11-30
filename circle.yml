@@ -5,15 +5,17 @@ machine:
     version: 7.1.0
 dependencies:
   override:
-    - cp .env.example .env
-    - cp .env.example .env
-    - composer install --dev --prefer-source --no-interaction
-    - chmod -R 777 storage
-    - php artisan key:generate
+    - echo "done"
+    # - cp .env.example .env
+    # - cp .env.example .env
+    # - composer install --dev --prefer-source --no-interaction
+    # - chmod -R 777 storage
+    # - php artisan key:generate
 test:
   override:
-    - php --version
-    - phpunit
+    - echo "done"
+    # - php --version
+    # - phpunit
 deployment:
   production:
     branch: master
