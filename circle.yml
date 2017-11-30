@@ -12,7 +12,7 @@ dependencies:
 test:
   override:
     - php --version
-deploy:
+deployment:
   production:
     branch: master
     heroku:
