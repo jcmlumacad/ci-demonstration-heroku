@@ -82,7 +82,7 @@
                     Laravel
                 </div>
                 <p>
-                    <strong>Ohayo gozaimasu</strong>
+                    <strong>Hajimemashite, mina-san. Welcome to TMJP.</strong>
                 </p>
 
                 <div class="links">
