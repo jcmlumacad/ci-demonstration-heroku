@@ -84,6 +84,9 @@
                 <p>
                     <strong>Hajimemashite, mina-san. Welcome to TMJP.</strong>
                 </p>
+                <p>
+                    <strong>Watashi wa John-san desu, yoroshiku onegaishimasu.</strong>
+                </p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
