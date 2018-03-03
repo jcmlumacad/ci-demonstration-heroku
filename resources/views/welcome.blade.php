@@ -87,6 +87,9 @@
                 <p>
                     <strong>Watashi wa John-san desu, yoroshiku onegaishimasu.</strong>
                 </p>
+                <p>
+                    <strong>This is automatically deployed from Gitlab to Heroku.</strong>
+                </p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
